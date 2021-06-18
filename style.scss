@@ -1,0 +1,51 @@
+@use "buttonid";
+
+.ui {
+  border: 5px solid black;
+  border-radius: 4px;
+  padding: 10px;
+  background: lightgrey;
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputwin {
+  height: 5vh;
+  width: 30vw;
+  background: grey;
+  border: 1px solid black;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.outputwin {
+  height: 10vh;
+  width: 30vw;
+  background: white;
+  border: 1px solid black;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.container {
+  display: grid;
+  width: 30vw;
+  grid-gap: 5px;
+  grid-template-areas:
+  "nine eight seven plus C"
+  "six five four minus equal"
+  "three two one multi equal"
+  "hash nil deci divi equal"
+}
+
+.button {
+  width: 5vw;
+  padding: 15px;
+  border-radius: 2px;
+  font-size: 24px;
+}
+
