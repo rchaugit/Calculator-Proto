@@ -1,0 +1,62 @@
+button {
+  min-height: 8vh;
+  font-size: 24px;
+  
+  &:first-child {
+    grid-area: nil;
+  }
+  &:nth-child(2) {
+    grid-area: one;
+  }
+  &:nth-child(3){
+    grid-area: two;
+  }
+  &:nth-child(4){
+    grid-area: three;
+  }
+  &:nth-child(5){
+    grid-area: four;
+  }
+  &:nth-child(6){
+    grid-area: five;
+  }
+  &:nth-child(7){
+    grid-area: six;
+  }
+  &:nth-child(8){
+    grid-area: seven;
+  }
+  &:nth-child(9){
+    grid-area: eight;
+  }
+  &:nth-child(10){
+    grid-area: nine;
+  }
+  &:nth-child(11){
+    grid-area: deci;
+  }
+  &:nth-child(12){
+    grid-area: plus;
+    background-color: orange;
+  }
+  &:nth-child(13){
+    grid-area: minus;
+    background-color: orange;
+  }
+  &:nth-child(14){
+    grid-area: multi;
+    background-color: orange;
+  }
+  &:nth-child(15){
+    grid-area: divi;
+    background-color: orange;
+  }
+  &:nth-child(16){
+    grid-area: equal;
+    background-color: orange;
+  }
+  &:nth-child(17){
+    grid-area: c;
+    background-color: rgb(117, 109, 109);
+  }
+}

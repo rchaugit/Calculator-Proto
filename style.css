@@ -1,116 +1,95 @@
-#nine {
-  grid-area: nine;
+button {
+  min-height: 8vh;
+  font-size: 24px;
 }
-
-#eight {
-  grid-area: eight;
-}
-
-#seven {
-  grid-area: seven;
-}
-
-#six {
-  grid-area: six;
-}
-
-#five {
-  grid-area: five;
-}
-
-#four {
-  grid-area: four;
-}
-
-#three {
-  grid-area: three;
-}
-
-#two {
-  grid-area: two;
-}
-
-#one {
-  grid-area: one;
-}
-
-#hash {
-  grid-area: hash;
-}
-
-#zero {
+button:first-child {
   grid-area: nil;
 }
-
-#decimal {
+button:nth-child(2) {
+  grid-area: one;
+}
+button:nth-child(3) {
+  grid-area: two;
+}
+button:nth-child(4) {
+  grid-area: three;
+}
+button:nth-child(5) {
+  grid-area: four;
+}
+button:nth-child(6) {
+  grid-area: five;
+}
+button:nth-child(7) {
+  grid-area: six;
+}
+button:nth-child(8) {
+  grid-area: seven;
+}
+button:nth-child(9) {
+  grid-area: eight;
+}
+button:nth-child(10) {
+  grid-area: nine;
+}
+button:nth-child(11) {
   grid-area: deci;
 }
-
-#plus {
+button:nth-child(12) {
   grid-area: plus;
+  background-color: orange;
 }
-
-#minus {
+button:nth-child(13) {
   grid-area: minus;
+  background-color: orange;
 }
-
-#multi {
+button:nth-child(14) {
   grid-area: multi;
+  background-color: orange;
 }
-
-#divi {
+button:nth-child(15) {
   grid-area: divi;
+  background-color: orange;
 }
-
-#equal {
+button:nth-child(16) {
   grid-area: equal;
+  background-color: orange;
 }
-
-#clear {
-  grid-area: C;
-}
-
-.ui {
-  border: 5px solid black;
-  border-radius: 4px;
-  padding: 10px;
-  background: lightgrey;
-  display: flex;
-  flex-direction: column;
-  width: 30vw;
-  justify-content: center;
-  align-items: center;
-}
-
-.inputwin {
-  height: 5vh;
-  width: 30vw;
-  background: grey;
-  border: 1px solid black;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.outputwin {
-  height: 10vh;
-  width: 30vw;
-  background: white;
-  border: 1px solid black;
-  display: flex;
-  justify-content: flex-end;
+button:nth-child(17) {
+  grid-area: c;
+  background-color: #756d6d;
 }
 
 .container {
-  display: grid;
-  width: 30vw;
-  grid-gap: 5px;
-  grid-template-areas: "nine eight seven plus C" "six five four minus equal" "three two one multi equal" "hash nil deci divi equal";
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  border: 8px solid black;
+  border-radius: 10px;
 }
 
-.button {
-  width: 5vw;
-  padding: 15px;
-  border-radius: 2px;
+.inputdisplay {
+  display: flex;
+  width: 25vw;
+  height: 5vh;
+  border-bottom: 1px solid grey;
   font-size: 24px;
+  align-items: center;
+  background-color: darkgray;
+}
+
+.outputdisplay {
+  display: flex;
+  width: 25vw;
+  height: 10vh;
+  border-bottom: 1px solid grey;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 44px;
+}
+
+.keypad {
+  display: grid;
+  grid-template-areas: "nine eight seven plus c" "six five four minus equal" "three two one multi equal" "nil nil deci divi equal";
+  background-color: #33333f;
 }
