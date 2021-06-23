@@ -1,7 +1,10 @@
+import { calculate } from './functions.js'
+
 const keys = document.querySelector('.keypad');
 // console.log(keys);
 
 const inputdisplay = document.querySelector('.inputdisplay');
+
 // console.log('input class note type is a ', input.nodeName);
 
 // const keyp = document.querySelector('.keypad');
@@ -47,8 +50,10 @@ equals.addEventListener('click', function (click){
   // output.innerHTML = calculateString(input.innerHTML);
   // output.innerHTML = Math.random();
   // output.innerHTML = eval(input.innerHTML);
+  output.innerHTML = calculate(input.innerHTML.value);
   input.innerHTML = "";
 })
 
 // when i click an operator store current number as a variable
 //
+
